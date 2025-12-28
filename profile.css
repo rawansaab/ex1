@@ -91,6 +91,7 @@ body {
 .section-title {
   text-transform: uppercase;
   font-size: 2.5vw;
+  text-align: ;
 }
 
 .endorsements {
@@ -99,17 +100,21 @@ body {
 }
 
 .endorse-layout {
-    display: ;
+    display: flex;
     gap: 2%;
 
 }
 
-.endorsement-card {
-
+.endorsement-card hr{
+    width: 40%;
+    margin: 10px 0;
+    font-style: italic;
 }
 
-.endorsement-card hr {
-
+.endorsement-card {
+    background-color: #white;
+    padding: 10px;
+    flex: 1;
 }
 
 .endorser {

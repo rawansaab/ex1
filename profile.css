@@ -43,11 +43,25 @@ body {
 }
 
 .main-title {
+  font-size: 3vw;
+  font-family: "Rammetto One", cursive;
+  padding-top: 10px;
+  text-shadow: 3px 1px #999999;
+  text-align: center;
+  margin: 0;
 }
 
-.section-info{
-
+.section{
+  padding: 2% 5%;
 }
 
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  margin-top: 120px;
+}
 .col{
+  flex: 1;
 }

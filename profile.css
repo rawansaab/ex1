@@ -91,7 +91,7 @@ body {
 .section-title {
   text-transform: uppercase;
   font-size: 2.5vw;
-  text-align: ;
+  text-align: center;
 }
 
 .endorsements {
@@ -104,18 +104,40 @@ body {
     gap: 2%;
 
 }
-
+.endorsement-card {
+    border-left: 1px solid #cccaca;
+    background-color: white;
+    padding: 10px;
+    flex: 1;
+}
 .endorsement-card hr{
     width: 40%;
     margin: 10px 0;
     font-style: italic;
 }
 
-.endorsement-card {
-    background-color: #white;
-    padding: 10px;
-    flex: 1;
+.endorser {
+    margin: 0;
 }
 
-.endorser {
+.friends-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.friends-row {
+
+}
+
+
+.friend-img {
+
+}
+
+.footer {
+
 }

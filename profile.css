@@ -1,0 +1,10 @@
+/*
+Rawan Saab: 213693625, Lareen Kadour:213992431 , George Hanna: 324090968
+*/
+body {
+  font-family: "Bree Serif", serif;
+  margin: 0;
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+}

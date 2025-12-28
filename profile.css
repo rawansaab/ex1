@@ -137,6 +137,10 @@ body {
 
 
 .friend-img {
+      height: 300px;
+  width: 200px;
+  object-fit: cover;
+  display: inline-block;
 
 }
 

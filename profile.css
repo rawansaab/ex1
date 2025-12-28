@@ -92,6 +92,7 @@ body {
   text-transform: uppercase;
   font-size: 2.5vw;
   text-align: center;
+  margin: 10px 0 20px 0;
 }
 
 .endorsements {
@@ -100,24 +101,25 @@ body {
 }
 
 .endorse-layout {
-    display: flex;
-    gap: 2%;
+  display: flex;
+  gap: 2%;
+}
 
-}
 .endorsement-card {
-    border-left: 1px solid #cccaca;
-    background-color: white;
-    padding: 10px;
-    flex: 1;
+  border-left: 10px solid #cccaca;
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 10px;
 }
-.endorsement-card hr{
-    width: 40%;
-    margin: 10px 0;
-    font-style: italic;
+
+.endorsement-card hr {
+  width: 40%;
+  margin: 10px 0;
+  font-style: italic;
 }
 
 .endorser {
-    margin: 0;
+  margin: 0;
 }
 
 .friends-row {
@@ -132,7 +134,8 @@ body {
 .friends-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 למעלה */
-  
+  gap: 20px;
+  justify-items: center;
 }
 
 
@@ -141,9 +144,12 @@ body {
   width: 200px;
   object-fit: cover;
   display: inline-block;
-
 }
 
 .footer {
-
+  background-color: #5f5b5b;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  text-align: center;
 }

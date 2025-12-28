@@ -89,10 +89,13 @@ body {
 }
 
 .section-title {
+  text-transform: uppercase;
+  font-size: 2.5vw;
 }
 
 .endorsements {
-
+  ackground-image: url("clouds.webp");
+  background-repeat: repeat;
 }
 
 .endorse-layout {

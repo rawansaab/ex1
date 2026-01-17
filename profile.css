@@ -5,7 +5,7 @@ Github URL: https://github.com/rawansaab/ex1
 body {
   font-family: "Bree Serif", serif;
   margin: 0;
-  background-image: url("background.jpg");
+  background-image: url("background.webp");
   background-attachment: fixed;
   background-repeat: repeat;
 }

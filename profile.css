@@ -123,12 +123,14 @@ body {
 }
 
 .endorsement-card span {
-    font-style: italic;
-    display: block;
-    margin-top: 5px;
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
 }
 
 .friends-section {
+  padding: 2% 5%;
+  text-align: center;
 
 }
 

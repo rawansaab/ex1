@@ -128,25 +128,18 @@ body {
     margin-top: 5px;
 }
 
-.friends-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 20px;
-  justify-items: center;
+.friends-section {
+
 }
 
+.friends-section h2 {
 
-.friend-img {
-  height: 300px;
-  width: 200px;
-  object-fit: cover;
-  display: inline-block;
 }
 
-.footer {
-  background-color: #5f5b5b;
-  font-weight: bold;
-  color: black;
-  padding: 10px;
-  text-align: center;
+.friends-grid {
+
+}
+
+.friends-grid img {
+
 }

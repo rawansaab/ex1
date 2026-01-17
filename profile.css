@@ -104,7 +104,7 @@ body {
   text-align: center;
 }
 
-.endorsement-section h2 {
+.endorsements-section h2 {
   font-family: 'Rammetto One', cursive;
   text-transform: uppercase;
   font-size: 2.5vw;
@@ -140,7 +140,6 @@ body {
   font-family: 'Rammetto One', cursive;
   font-size: 2.5vw;
   text-transform: uppercase;
-
 }
 
 .friends-grid {

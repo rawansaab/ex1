@@ -3,25 +3,26 @@ Names: Rawan Saab: 213693625, Lareen Kadour:213992431 , George Hanna: 324090968
 Github URL: https://github.com/rawansaab/ex1
 */
 body {
-  font-family: "Bree Serif", serif;
   margin: 0;
+  font-family: "Bree Serif", serif;  
   background-image: url("background.webp");
   background-attachment: fixed;
   background-repeat: repeat;
 }
-.page {
+
+.main-container {
   width: 80%;
   margin: 3% auto;
   background-color: white;
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2); 
   position: relative;
 }
 
-.banner{
+#banner-container{
   height: 350px;
   background-image: url("banner.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
   position: relative;
 }
 
@@ -32,13 +33,13 @@ body {
 }
 
 .profile-img {
-  position: absolute;
-  top: 70%;
-  left: -2%;
+  border: 10px solid white;
   width: 200px;
   height: 200px;
+  top: 70%;
+  left: -2%;
   border-radius: 50%;
-  border: 10px solid white;
+  position: absolute;
   object-fit: cover;
 }
 

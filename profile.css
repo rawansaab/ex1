@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 
-#banner-container{
+#banner{
   height: 350px;
   background-image: url("banner.png");
   background-repeat: no-repeat;
@@ -100,13 +100,15 @@ body {
   background-image: url("clouds.webp");
   background-repeat: repeat;
   flex-direction: row-reverse;
+  font-weight: bold;
+  text-align: center;
 }
 
 .endorsement-section h2 {
-    font-family: 'Rammetto One', cursive;
-    text-transform: uppercase;
-    font-size: 2.5vw;
-    margin-top: 0;
+  font-family: 'Rammetto One', cursive;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  margin-top: 0;
 }
 
 .endorsement-card {
@@ -153,4 +155,12 @@ body {
   height: 300px;
   width: 200px;
   object-fit: cover;
+}
+
+.footer {
+  background-color: #5f5b5b;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }

@@ -170,13 +170,17 @@ body {
   }
 
   .main-title {
+    font-size: 8vw;
   }
 
   .content-block {
-
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .content-block .image-column {
+    order: -1;
+    margin-bottom: 20px;
 
   }
 

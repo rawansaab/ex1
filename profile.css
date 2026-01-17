@@ -51,19 +51,11 @@ body {
   text-align: center;
   margin: 0;
 }
+.content-block {
 
-.section{
-  padding: 2% 5%;
 }
 
-.info{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2%;
-  margin-top: 120px;
-}
-.col{
+.text-column, .image-column{
   flex: 1;
 }
 

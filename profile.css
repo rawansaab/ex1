@@ -118,7 +118,8 @@ body {
 
 .endorsement-card hr {
   width: 40%;
-  margin: 10px 0;
+  margin-left: 0;
+  border: 1px solid #ccc;
 }
 
 .endorsement-card span {

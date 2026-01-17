@@ -99,11 +99,11 @@ body {
 .endorsements-section {
   background-image: url("clouds.webp");
   background-repeat: repeat;
+  flex-direction: row-reverse;
 }
 
-.endorse-layout {
-  display: flex;
-  gap: 2%;
+.endorsement-section h2 {
+
 }
 
 .endorsement-card {

@@ -164,5 +164,34 @@ body {
   text-align: center;
 }
 @media (min-width: 320px) and (max-width: 480px) {
+  .main-container {
+    width: 95%;
+    margin: 3% auto;
+  }
 
+  .main-title {
+  }
+
+  .content-block {
+
+  }
+
+  .content-block .image-column {
+
+  }
+
+  .content-block .text-column {
+  }
+
+  .content-block img {
+
+  }
+
+  .friends-grid {
+
+  }
+
+  .friends-grid img {
+ 
+  }
 }

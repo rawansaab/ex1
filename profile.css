@@ -95,17 +95,17 @@ body {
     margin: 0;
     padding-left: 20px;
 }
+.endorsement-section {
+    font-family: 'Rammetto One', cursive;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    margin-top: 0;
+}
 
-.endorsements-section {
+.endorsements-section h2{
   background-image: url("clouds.webp");
   background-repeat: repeat;
   flex-direction: row-reverse;
-}
-
-.endorsement-section h2 {
-    font-family: 'Rammetto One', cursive;
-    font-siz
-
 }
 
 .endorsement-card {

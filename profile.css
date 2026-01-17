@@ -135,13 +135,22 @@ body {
 }
 
 .friends-section h2 {
+  font-family: 'Rammetto One', cursive;
+  font-size: 2.5vw;
+  text-transform: uppercase;
 
 }
 
 .friends-grid {
-
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .friends-grid img {
-
+  padding: 10px;
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
 }

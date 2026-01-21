@@ -29,7 +29,7 @@ body {
 .profile-img-wrapper {
   position: relative;
   height: 100%;
-  left: 2px;
+  left: 2%;
 }
 
 .profile-img {
@@ -144,7 +144,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 200px); 
   justify-content: space-between;
-  align-items: end
+  align-items: end;
   width: 100%;                   
 }
 

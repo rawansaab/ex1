@@ -2,6 +2,10 @@
 Names: Rawan Saab: 213693625, Lareen Kadour:213992431 , George Hanna: 324090968
 Github URL: https://github.com/rawansaab/ex1
 */
+* {
+    box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Bree Serif", serif;  
@@ -52,11 +56,10 @@ body {
 }
 
 .content-block {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    padding: 2% 5%;
-
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
 }
 
 .text-column, .image-column{
@@ -64,35 +67,35 @@ body {
 }
 
 .content-block img {
-    display: block;
-    margin: 0 auto;
-    max-height: 600px;
-    max-width: 400px;
-    width: 30vw;
+  display: block;
+  margin: 0 auto;
+  max-height: 600px;
+  max-width: 400px;
+  width: 30vw;
 }
 
 .info-section .text-column {
-    padding-right: 20px; 
+  padding-right: 20px; 
 }
 
 .info-row {
-    display: flex;
-    margin-bottom: 15px;
-    align-items: flex-start;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: flex-start;
 }
 
 .info-label {
-    width: 40%; 
-    font-weight: bold;
+  width: 40%; 
+  font-weight: bold;
 }
 
 .info-value {
-    width: 60%; 
+  width: 60%; 
 }
 
 .info-value ul {
-    margin: 0;
-    padding-left: 20px;
+  margin: 0;
+  padding-left: 20px;
 }
 
 .endorsements-section {
@@ -141,10 +144,9 @@ body {
 }
 
 .friends-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 200px); 
+  display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
-  align-items: end;
   width: 100%;                   
 }
 
@@ -167,8 +169,8 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .main-container {
-    width: 95%;
-    margin: 3% auto;
+    width: 100%;
+    margin: 0;
   }
 
   .main-title {
@@ -198,11 +200,6 @@ body {
   }
 
   .friends-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .friends-grid img {
-    width: 200px;
-    height: 300px;
+    justify-content: center;
   }
 }

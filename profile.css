@@ -61,8 +61,14 @@ body {
   padding: 2% 5%;
 }
 
-.text-column, .image-column{
+.text-column{
   flex: 1;
+}
+
+.image-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-block img {

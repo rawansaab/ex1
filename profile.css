@@ -176,7 +176,6 @@ body {
   background-image: url("clouds.webp");
   background-repeat: repeat;
   flex-direction: row-reverse;
-  font-weight: bold;
   text-align: center;
 }
 

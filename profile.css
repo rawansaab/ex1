@@ -157,7 +157,7 @@ body {
 }
 
 .info-value {
-  width: 60%; 
+  flex: 1; 
 }
 
 .info-value ul {

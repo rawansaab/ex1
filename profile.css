@@ -2,10 +2,17 @@
 Names: Rawan Saab: 213693625, Lareen Kadour:213992431 , George Hanna: 324090968
 Github URL: https://github.com/rawansaab/ex1
 */
+
+/* -----------------------------
+   Part 0: Global / Reset
+   ----------------------------- */
 * {
     box-sizing: border-box;
 }
 
+/* -----------------------------
+   Part 1: Page background (Body)
+   ----------------------------- */
 body {
   margin: 0;
   font-family: "Bree Serif", serif;  
@@ -13,6 +20,14 @@ body {
   background-attachment: fixed;
   background-repeat: repeat;
 }
+
+/* -----------------------------
+   Part 2: Main centered container
+   Requirements:
+   - width: 80%
+   - margin: 3% top/bottom and auto left/right
+   - white background + shadow
+   ----------------------------- */
 
 .main-container {
   width: 80%;
@@ -22,6 +37,14 @@ body {
   position: relative;
 }
 
+/* -----------------------------
+   Part 3: Banner (Header)
+   Requirements:
+   - height: 350px
+   - banner image not repeating
+   - banner image should cover the container fully (using background-size)
+   ----------------------------- */
+
 #banner{
   height: 350px;
   background-image: url("banner.png");
@@ -30,11 +53,32 @@ body {
   position: relative;
 }
 
+/* Banner inner container:
+   position relative to serve as a reference for positioned elements inside the banner
+*/
+.banner-inner {
+  position: relative;
+  height: 100%;
+/* Note: We tried using 2% as required, but it did not create the needed offset,
+   so we used 2px instead to achieve the correct visual alignment. */
+   
+  left: 2px;
+}
+
+/* Wrapper around the profile image:
+   position relative to allow absolute positioning of .profile-img inside it.
+*/
 .profile-img-wrapper {
   position: relative;
   height: 100%;
-  left: 2%;
 }
+
+/* Profile image:
+   Requirements:
+   - 200x200 circle
+   - white 10px border
+   - top: 70% and left: -2% (slightly outside to the left)
+*/
 
 .profile-img {
   border: 10px solid white;
@@ -46,6 +90,13 @@ body {
   position: absolute;
 }
 
+/* -----------------------------
+   Part 4: Main Title (H1)
+   - custom font
+   - text shadow
+   - centered
+   ----------------------------- */
+
 .main-title {
   font-size: 3vw;
   font-family: "Rammetto One", cursive;
@@ -54,6 +105,13 @@ body {
   text-align: center;
 }
 
+/* -----------------------------
+   Part 5: Content blocks (Info + Endorsements)
+   Layout using Flexbox:
+   - text column + image column side by side
+   - spacing and alignment
+   ----------------------------- */
+
 .content-block {
   display: flex; 
   justify-content: space-between;
@@ -61,16 +119,19 @@ body {
   padding: 2% 5%;
 }
 
+/* Text area takes flexible space */
 .text-column{
   flex: 1;
 }
 
+/* Image column centered */
 .image-column{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Shared content images size limits */
 .content-block img {
   display: block;
   max-height: 600px;
@@ -78,10 +139,12 @@ body {
   width: 30vw;
 }
 
+/* Shared content images size limits */
 .info-section .text-column {
   padding-right: 20px; 
 }
 
+/* Info rows (label + value) */
 .info-row {
   display: flex;
   margin-bottom: 15px;
@@ -102,6 +165,13 @@ body {
   padding-left: 20px;
 }
 
+/* -----------------------------
+   Part 6: Endorsements section
+   - clouds background
+   - reversed row (image on left, text on right)
+   - bold text and centered layout
+   ----------------------------- */
+
 .endorsements-section {
   background-image: url("clouds.webp");
   background-repeat: repeat;
@@ -117,6 +187,7 @@ body {
   margin-top: 0;
 }
 
+/* Endorsement card styling */
 .endorsement-card {
   border-left: 10px solid #cccaca;
   background-color: white;
@@ -136,6 +207,11 @@ body {
   margin-top: 5px;
 }
 
+/* -----------------------------
+   Part 7: Friends section
+   - centered section title
+   - image gallery using CSS Grid (4 columns of 200px)
+   ----------------------------- */
 .friends-section {
   padding: 2% 5%;
   text-align: center;
@@ -147,6 +223,7 @@ body {
   text-transform: uppercase;
 }
 
+/* Grid layout for friends images */
 .friends-grid {
   display: grid;
   grid-template-columns: repeat(4, 200px);
@@ -155,6 +232,7 @@ body {
   width: 100%;
 }
 
+/* Friends images size and cropping */
 .friends-grid img {
   padding: 10px;
   height: 300px;
@@ -163,6 +241,9 @@ body {
   object-fit: cover;
 }
 
+/* -----------------------------
+   Part 8: Footer
+   ----------------------------- */
 footer {
   background-color: #5f5b5b;
   padding: 10px;
@@ -170,6 +251,13 @@ footer {
   font-weight: bold;
   text-align: center;
 }
+
+/* -----------------------------
+   Part 9: Responsive (Mobile / Tablet)
+   - Make container full width
+   - Stack content blocks vertically
+   - Friends grid becomes 1 column
+   ----------------------------- */
 
 @media screen and (max-width: 768px) {
   .main-container {

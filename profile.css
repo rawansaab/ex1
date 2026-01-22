@@ -52,7 +52,6 @@ body {
   padding-top: 10px;
   text-shadow: 3px 3px 1px #999999;
   text-align: center;
-  margin: 0;
 }
 
 .content-block {
@@ -68,7 +67,6 @@ body {
 
 .content-block img {
   display: block;
-  margin: 0 auto;
   max-height: 600px;
   max-width: 400px;
   width: 30vw;
@@ -144,10 +142,11 @@ body {
 }
 
 .friends-grid {
-  display: flex;
-  flex-wrap: wrap; 
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
   justify-content: space-between;
-  width: 100%;                   
+  align-items: end;
+  width: 100%;
 }
 
 .friends-grid img {
@@ -156,10 +155,9 @@ body {
   width: 200px;
   box-sizing: border-box;
   object-fit: cover;
-  object-position: center top;
 }
 
-.footer {
+footer {
   background-color: #5f5b5b;
   padding: 10px;
   color: black;
@@ -185,7 +183,6 @@ body {
   .content-block .image-column {
     order: -1;
     margin-bottom: 20px;
-
   }
 
   .content-block .text-column {
@@ -200,6 +197,7 @@ body {
   }
 
   .friends-grid {
+    grid-template-columns: 1fr;
     justify-content: center;
   }
 }

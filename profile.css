@@ -15,10 +15,10 @@ Github URL: https://github.com/rawansaab/ex1
    ----------------------------- */
 body {
   margin: 0;
-  font-family: "Bree Serif", serif;  
   background-image: url("background.webp");
-  background-attachment: fixed;
   background-repeat: repeat;
+  font-family: "Bree Serif", serif;  
+  background-attachment: fixed;
 }
 
 /* -----------------------------
@@ -96,10 +96,16 @@ body {
    - text shadow
    - centered
    ----------------------------- */
+   
+/* Unified font definition for all main titles to avoid duplicated font-family rules */
+.main-title,
+.endorsements-section h2,
+.friends-section h2 {
+  font-family: "Rammetto One", cursive;
+}
 
 .main-title {
   font-size: 3vw;
-  font-family: "Rammetto One", cursive;
   padding-top: 10px;
   text-shadow: 3px 3px 1px #999999;
   text-align: center;
@@ -139,11 +145,6 @@ body {
   width: 30vw;
 }
 
-/* Shared content images size limits */
-.info-section .text-column {
-  padding-right: 20px; 
-}
-
 /* Info rows (label + value) */
 .info-row {
   display: flex;
@@ -180,10 +181,8 @@ body {
 }
 
 .endorsements-section h2 {
-  font-family: 'Rammetto One', cursive;
   text-transform: uppercase;
   font-size: 2.5vw;
-  margin-top: 0;
 }
 
 /* Endorsement card styling */
@@ -196,14 +195,11 @@ body {
 
 .endorsement-card hr {
   width: 40%;
-  margin-left: 0;
-  border: 1px solid #ccc;
 }
 
 .endorsement-card span {
   font-style: italic;
   display: block;
-  margin-top: 5px;
 }
 
 /* -----------------------------
@@ -217,7 +213,6 @@ body {
 }
 
 .friends-section h2 {
-  font-family: 'Rammetto One', cursive;
   font-size: 2.5vw;
   text-transform: uppercase;
 }
@@ -225,8 +220,8 @@ body {
 /* Grid layout for friends images */
 .friends-grid {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
-  justify-content: space-between;
+  grid-template-columns: 200px 200px 200px 200px;
+  justify-content: space-evenly;
   align-items: end;
   width: 100%;
 }
@@ -245,8 +240,8 @@ body {
    ----------------------------- */
 footer {
   background-color: #5f5b5b;
-  padding: 10px;
   color: black;
+  padding: 10px;
   font-weight: bold;
   text-align: center;
 }
@@ -259,38 +254,57 @@ footer {
    ----------------------------- */
 
 @media screen and (max-width: 768px) {
+  /* container full width */
   .main-container {
     width: 100%;
     margin: 0;
   }
 
-  .main-title {
-    font-size: 8vw;
+  /* banner stays the same height, but profile image centers nicely */
+  .banner-inner{
+    left: 0;
   }
 
+  .profile-img{
+    left: 25%;       
+    top: 65%;               
+  }
+
+  /* push title down so it won't sit under the profile image */
+  .main-title {
+    font-size: 8vw;
+    margin-top: 140px;   
+    text-align: center;
+  }
+
+  /* one column: image above text */
   .content-block {
     flex-direction: column;
     align-items: stretch;
+    gap: 20px;
   }
 
   .content-block .image-column {
     order: -1;
-    margin-bottom: 20px;
-  }
-
-  .content-block .text-column {
-    padding-right: 0;
   }
 
   .content-block img {
-    width: 80vw;
+    width: 90%;
     max-width: 400px;
-    max-height: 600px;
     height: auto;
+    max-height: none;
   }
 
+  /* friends: one image per row */
   .friends-grid {
     grid-template-columns: 1fr;
-    justify-content: center;
+    justify-items: center;
+    row-gap: 20px;
   }
+
+  .friends-grid img{
+    width: 200px;        
+    height: 300px;        
+  }
+
 }
